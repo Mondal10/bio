@@ -9,6 +9,6 @@ export const data = {
   JSFrameworks: "JAVASCRIPT FRAMEWORKS: ReactJS | VueJS",
   JSLibs: "JAVASCRIPT LIBRARIES: jQuery",
   CSSFrameworks: "CSS FRAMEWORKS: Bootstrap | Bulma | Buefy | Materialize",
-  CSSPre = "CSS PREPROCESSORS: SASS",
-  frontEndAnimation = "FRONT END ANIMATION: Canvas | HTML5"
+  CSSPre: "CSS PREPROCESSORS: SASS",
+  frontEndAnimation: "FRONT END ANIMATION: Canvas | HTML5"
 };
