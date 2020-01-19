@@ -2,9 +2,9 @@ export const loading = () => {
   const initDot = document.querySelector("#loading");
   const loading = setInterval(function () {
     if (initDot.innerHTML.length == 5) {
-      initDot.innerHTML = "";
+      initDot.innerHTML = '';
     } else {
-      initDot.innerHTML += ".";
+      initDot.innerHTML += '.';
     }
   }, 350); // Dot Speed
 

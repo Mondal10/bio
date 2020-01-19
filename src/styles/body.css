@@ -5,12 +5,14 @@ body {
 h1 {
   font-family: "Share Tech";
   animation: pulse 0.9s infinite;
-  color: #00ebd4;
+  /* color: #00ebd4; */
+  color: #00FF00;
 }
 
 i {
   font-size: 24px;
-  color: #00ebd4;
+  /* color: #00ebd4; */
+  color: #00FF00;
   animation: pulse 0.9s infinite;
 }
 
@@ -19,24 +21,15 @@ i {
   font-family: "Share Tech";
   font-weight: 900;
   font-size: 24px;
-  color: #00ebd4;
+  /* color: #00ebd4; */
+  color: #00FF00;
   animation: pulse 0.9s infinite;
-}
-
-.block {
-  width: 50px;
-  height: 50px;
-  background-color: #000;
 }
 
 .cursor:after {
   content: "_";
   opacity: 0;
   animation: cursor 1s infinite;
-}
-
-.sign:before {
-  content: "> ";
 }
 
 #loading-alpha-div, .img-div {
@@ -49,8 +42,4 @@ i {
 .sub-item {
   margin-top: 20px;
   margin-left: 40px;
-}
-.inline {
-  display: inline;
-  margin-left: 10px;
 }
