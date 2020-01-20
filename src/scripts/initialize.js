@@ -147,6 +147,7 @@ export const initialize = () => {
       function initCSSFrameworks(i) {
         const cssFrameworksDiv = document.querySelector('#css-frameworks');
         cssFrameworksDiv.classList.add('cursor');
+        smoothScroll(cssFrameworksDiv);
         cssFrameworksDiv.innerText = data.CSSFrameworks.substring(0, i);
 
         if (i < data.CSSFrameworks.length) {
@@ -164,6 +165,7 @@ export const initialize = () => {
       function initCSSPre(i) {
         const cssPreDiv = document.querySelector('#css-pre');
         cssPreDiv.classList.add('cursor');
+        smoothScroll(cssPreDiv);
         cssPreDiv.innerText = data.CSSPre.substring(0, i);
 
         if (i < data.CSSPre.length) {
@@ -181,6 +183,7 @@ export const initialize = () => {
       function initFrontEndAnimation(i) {
         const frontEndAnimationDiv = document.querySelector('#front-end-animation');
         frontEndAnimationDiv.classList.add('cursor');
+        smoothScroll(frontEndAnimationDiv);
         frontEndAnimationDiv.innerText = data.frontEndAnimation.substring(0, i);
 
         if (i < data.frontEndAnimation.length) {
@@ -198,6 +201,7 @@ export const initialize = () => {
       function initBackEnd(i) {
         const backEndDiv = document.querySelector('#back-end');
         backEndDiv.classList.add('cursor');
+        smoothScroll(backEndDiv);
         backEndDiv.innerText = data.backEnd.substring(0, i);
 
         if (i < data.backEnd.length) {
@@ -225,4 +229,8 @@ export const initialize = () => {
     }
     initProgramAlpha(0)
   }, 1500);
+
+  function smoothScroll(element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
 }
