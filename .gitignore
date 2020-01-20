@@ -4,7 +4,7 @@ node_modules/
 *.log
 
 # Production
-/build
+/dist
 
 # OS generated files
 .DS_Store
