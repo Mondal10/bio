@@ -8,8 +8,9 @@
     "clean": "rm -rf dist",
     "start": "parcel src/index.html --port 8080",
     "build": "parcel build src/index.html",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
+  "comment": "build and deploy comments are separate because i need to change the path from / to ./ or else github wont get the path",
   "author": "Amit Mondal",
   "license": "ISC",
   "devDependencies": {
