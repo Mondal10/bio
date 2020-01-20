@@ -1,6 +1,5 @@
-import { loading } from "./loading.js";
-import { data } from "./globalVariables.js";
-console.log(data);
+import { loading } from "./loading";
+import { data } from "./globalVariables";
 
 export const initialize = () => {
   loading();
