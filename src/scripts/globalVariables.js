@@ -5,10 +5,12 @@ export const data = {
   alias: "KNOWN ALIAS: Mondal10",
   occupation: "OCCUPATION: Fullstack Developer",
   frontEnd: "FRONT END DEVELOPMENT CORE: HTML5 | CSS3 | JAVASCRIPT",
-  backEnd: "BACK END DEVELOPMENT: NodeJS | Python | PHP | MySQL",
-  JSFrameworks: "› JAVASCRIPT FRAMEWORKS: ReactJS | VueJS",
-  JSLibs: "› JAVASCRIPT LIBRARIES: jQuery",
+  JSFrameworks: "› JAVASCRIPT FRAMEWORKS/LIBRARIES: ReactJS | VueJS | GatsbyJS | ElectronJS",
+  moduleBundler: "› MODULE BUNDLER: Webpack | Parcel",
   CSSFrameworks: "› CSS FRAMEWORKS: Bootstrap | Bulma | Buefy | Materialize",
   CSSPre: "› CSS PRE-PROCESSORS: SASS",
-  frontEndAnimation: "› FRONT END ANIMATION: Canvas | HTML5"
+  backEnd: "BACK END DEVELOPMENT CORE: NodeJS | Python | PHP",
+  NodeFrameworks: "› NODE JS FRAMEWORKS: Express",
+  databaseManagement: "› DATABASE MANAGEMENT SYSTEMS: MongoDB | MySQL",
+  dataFetch: "› DATA FETCHING AND MICROSERVICES: REST | GraphQL"
 };

@@ -121,22 +121,22 @@ export const initialize = () => {
         } else {
           jsFrameworksDiv.classList.remove('cursor');
           setTimeout(function () {
-            initJSLibs(0);
+            initModuleBundler(0);
           }, 1500);
         }
       }
 
-      function initJSLibs(i) {
-        const jsLibrariesDiv = document.querySelector('#js-libs');
-        jsLibrariesDiv.classList.add('cursor');
-        jsLibrariesDiv.innerText = data.JSLibs.substring(0, i);
+      function initModuleBundler(i) {
+        const moduleBundlerDiv = document.querySelector('#module-bundler');
+        moduleBundlerDiv.classList.add('cursor');
+        moduleBundlerDiv.innerText = data.moduleBundler.substring(0, i);
 
-        if (i < data.JSLibs.length) {
+        if (i < data.moduleBundler.length) {
           setTimeout(function () {
-            initJSLibs(i + 1);
+            initModuleBundler(i + 1);
           }, 35);
         } else {
-          jsLibrariesDiv.classList.remove('cursor');
+          moduleBundlerDiv.classList.remove('cursor');
           setTimeout(function () {
             initCSSFrameworks(0);
           }, 1500);
@@ -174,24 +174,6 @@ export const initialize = () => {
         } else {
           cssPreDiv.classList.remove('cursor');
           setTimeout(function () {
-            initFrontEndAnimation(0);
-          }, 1500);
-        }
-      }
-
-      function initFrontEndAnimation(i) {
-        const frontEndAnimationDiv = document.querySelector('#front-end-animation');
-        frontEndAnimationDiv.classList.add('cursor');
-        smoothScroll(frontEndAnimationDiv);
-        frontEndAnimationDiv.innerText = data.frontEndAnimation.substring(0, i);
-
-        if (i < data.frontEndAnimation.length) {
-          setTimeout(function () {
-            initFrontEndAnimation(i + 1);
-          }, 35);
-        } else {
-          frontEndAnimationDiv.classList.remove('cursor');
-          setTimeout(function () {
             initBackEnd(0);
           }, 1500);
         }
@@ -209,6 +191,60 @@ export const initialize = () => {
           }, 35);
         } else {
           backEndDiv.classList.remove('cursor');
+          setTimeout(function () {
+            initNodeFrameworks(0);
+          }, 1500);
+        }
+      }
+
+      function initNodeFrameworks(i) {
+        const nodeFrameworkDiv = document.querySelector('#node-frameworks');
+        nodeFrameworkDiv.classList.add('cursor');
+        smoothScroll(nodeFrameworkDiv);
+        nodeFrameworkDiv.innerText = data.NodeFrameworks.substring(0, i);
+
+        if (i < data.NodeFrameworks.length) {
+          setTimeout(function () {
+            initNodeFrameworks(i + 1);
+          }, 35);
+        } else {
+          nodeFrameworkDiv.classList.remove('cursor');
+          setTimeout(function () {
+            initDatabase(0);
+          }, 1500);
+        }
+      }
+
+      function initDatabase(i) {
+        const dbmsDiv = document.querySelector('#database-management');
+        dbmsDiv.classList.add('cursor');
+        smoothScroll(dbmsDiv);
+        dbmsDiv.innerText = data.databaseManagement.substring(0, i);
+
+        if (i < data.databaseManagement.length) {
+          setTimeout(function () {
+            initDatabase(i + 1);
+          }, 35);
+        } else {
+          dbmsDiv.classList.remove('cursor');
+          setTimeout(function () {
+            initDataFetching(0);
+          }, 1500);
+        }
+      }
+
+      function initDataFetching(i) {
+        const datafetchDiv = document.querySelector('#data-fetch');
+        datafetchDiv.classList.add('cursor');
+        smoothScroll(datafetchDiv);
+        datafetchDiv.innerText = data.dataFetch.substring(0, i);
+
+        if (i < data.dataFetch.length) {
+          setTimeout(function () {
+            initDataFetching(i + 1);
+          }, 35);
+        } else {
+          datafetchDiv.classList.remove('cursor');
         }
       }
     }
